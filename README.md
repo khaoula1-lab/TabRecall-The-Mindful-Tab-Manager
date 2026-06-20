@@ -16,7 +16,7 @@ Have you ever looked at your browser and seen 20+ tabs open, only to realize you
 
 ## Tech Stack
 
-- **Backend**: Python 3.10+, FastAPI (Asynchronous Web Framework), Uvicorn (ASGI Web Server)
+- **Backend**: Python 3.11, FastAPI (Asynchronous Web Framework), Uvicorn (ASGI Web Server)
 - **Database**: SQLite (built-in relational database), SQLAlchemy (SQL Toolkit & ORM)
 - **Frontend**: HTML5, Vanilla CSS3 (Custom Glassmorphic styles), JavaScript (Fetch API, asynchronous UI rendering)
 - **Notification Engine**: `plyer` (Python desktop notifications wrapper)
