@@ -1,14 +1,11 @@
-# 🧠 TabRecall: The Mindful Tab Manager
+# TabRecall: The Mindful Tab Manager
 
 Have you ever looked at your browser and seen 20+ tabs open, only to realize you’ve forgotten *why* you opened half of them? 
 
 **TabRecall** is a simple, beautiful, self-hosted web app that solves tab overload by forcing you to document *why* you are keeping a tab open, and reminding you to review it later.
-
-This project was built step-by-step as a hands-on journey to learn **Python, APIs, databases, and frontend integration**.
-
 ---
 
-## ✨ Features
+## Features
 
 - **"Remember Why" Prompts**: Every saved tab requires a short note explaining *why* it was saved and *when* you want to be reminded.
 - **One-Click Bookmarklet**: A draggable browser button that allows you to save any tab instantly without leaving your current page.
@@ -17,7 +14,7 @@ This project was built step-by-step as a hands-on journey to learn **Python, API
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Python 3.10+, FastAPI (Asynchronous Web Framework), Uvicorn (ASGI Web Server)
 - **Database**: SQLite (built-in relational database), SQLAlchemy (SQL Toolkit & ORM)
@@ -26,7 +23,7 @@ This project was built step-by-step as a hands-on journey to learn **Python, API
 
 ---
 
-## 🚀 Quick Start (Local Setup)
+## Quick Start (Local Setup)
 
 Follow these steps to run the project locally on your machine:
 
@@ -62,16 +59,3 @@ python -m uvicorn app.main:app --reload
 Once started, open your browser and navigate to:
 - **Dashboard**: `http://localhost:8000`
 - **Interactive API Documentation**: `http://localhost:8000/docs`
-
----
-
-## 🧠 Python Learning Concepts Covered
-
-Through building this project, we explored:
-1. **Virtual Environments (`venv`) & Package Management (`pip`)**: Managing project-specific libraries.
-2. **Object-Oriented Programming (OOP) & Data Validation**: Using Pydantic models for structured requests.
-3. **Relational Databases (SQL)**: Creating database schemas, querying, and updating records using SQLAlchemy and SQLite.
-4. **Asynchronous Programming (`async`/`await`)**: Running high-performance API endpoints in FastAPI.
-5. **Background Threading**: Running a separate timer service concurrently with the web server to monitor and trigger reminders.
-6. **API Design**: Building RESTful endpoints (`GET`, `POST`, `PUT`, `DELETE`) and working with JSON payloads.
-7. **Frontend Integration**: Understanding Cross-Origin Resource Sharing (CORS) and making asynchronous fetch calls from JavaScript.
