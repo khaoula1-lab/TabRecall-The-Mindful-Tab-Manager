@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TabRecall - Mindful Tab Manager</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="glass-container">
+        <!-- Header -->
+        <header>
+            <h1>Tab<span>Recall</span></h1>
+            <p class="subtitle">Remember why you opened it, clear the clutter.</p>
+        </header>
+        <!-- Save Tab Form -->
+        <section class="form-section">
+            <form id="save-tab-form">
+                <div class="form-row">
+                    <input type="url" id="tab-url" placeholder="https://example.com" required>
+                    <input type="text" id="tab-title" placeholder="Tab Title (Optional)">
+                </div>
+                <div class="form-row">
+                    <input type="text" id="tab-why" placeholder="Why are you keeping this open? (e.g. Learn decorators)" required>
+                    <button type="submit" class="btn-primary">Recall Tab</button>
+                </div>
+            </form>
+        </section>
+        <div class="view-toggle">
+            <button id="btn-active" class="toggle-btn active">Active Tabs</button>
+            <button id="btn-archived" class="toggle-btn">Archived</button>
+        </div>
+        <!-- Grid of Tabs -->
+        <main id="tabs-grid" class="tabs-grid">
+            <!-- JavaScript will inject cards here -->
+            <div class="loading">Loading your mindful space...</div>
+        </main>
+    </div>
+    <script src="/static/app.js"></script>
+</body>
+</html>
